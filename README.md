@@ -18,23 +18,26 @@ Devopsfetch is a tool for server information retrieval and monitoring. It collec
 
  2. List Docker Images and Containers and provide detailed information about a specific container:
     devopsfetch -d          
-    devopsfetch -d <container_name>  
+    devopsfetch -d alpine 
 
  3. Display Nginx Domains and Ports and provide detailed configuration information for a specific domain:
     devopsfetch -n          
-    devopsfetch -n <domain> 
+    devopsfetch -n twinmom.com
 
  4. List Users and Last Login Times and provide detailed information about a specific user:
     devopsfetch -u          
-    devopsfetch -u <username> 
+    devopsfetch -u kafayat-adeyemi
 
  5. Display Activities Within a Specified Time Range:
     devopsfetch -t "2024-07-22" "2024-07-24"  
 
  ## Help
-    To display usage instructions, run devopsfetch -h   
+ 
+    To display usage instructions:
+    devopsfetch -h   
 
 ## Logging Mechanism
+
     The activities is logged to /var/log/devopsfetch.log.
     Log rotation is configured to keep logs for 7 days and compress older logs.
     The following command can be used to retrieve logs: 

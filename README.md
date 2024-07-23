@@ -1,4 +1,4 @@
-## BUILDING DEVOPSFETCH FOR SERVER INFORMATION RETRIEVAL AND MONITORING
+## Building Devopsfetch for Server Information Retrieval and Monitoring 
 
 Devopsfetch is a tool for server information retrieval and monitoring. It collects and displays system information, including active ports, user logins, Nginx configurations, Docker images, and container statuses. It also includes a systemd service for continuous monitoring and logging.
 

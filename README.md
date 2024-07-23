@@ -35,4 +35,8 @@ Devopsfetch is a tool for server information retrieval and monitoring. It collec
     To display usage instructions, run devopsfetch -h   
 
 ## Logging Mechanism
-    Devopsfetch logs activities to /var/log/devopsfetch.log. Log rotation is configured to keep logs for 7 days and compress older logs.
+    The activities is logged to /var/log/devopsfetch.log.
+    Log rotation is configured to keep logs for 7 days and compress older logs.
+    The following command can be used to retrieve logs: 
+    sudo cat /var/log/devopsfetch.log
+    

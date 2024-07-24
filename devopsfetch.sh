@@ -14,16 +14,17 @@ display_help() {
 }
 
 # Function to display active ports and services
-display_ports(80) {
+display_ports() {
     if [ -z "$1" ]; then
         ss -tuln
     else
         ss -tuln | grep ":$1 "
     fi
+
 }
 
 # Function to display Docker images and containers
-display_docker(alpine) {
+display_docker() {
     if [ -z "$1" ]; then
         docker images
         docker ps -a
@@ -33,7 +34,7 @@ display_docker(alpine) {
 }
 
 # Function to display Nginx domains and ports
-display_nginx(twinmom.com) {
+display_nginx() {
     if [ -z "$1" ]; then
         nginx -T 2>/dev/null | grep -E 'server_name|listen'
     else
@@ -42,7 +43,7 @@ display_nginx(twinmom.com) {
 }
 
 # Function to list users and last login times
-display_users(kafayat-adeyemi) {
+display_users() {
     if [ -z "$1" ]; then
         lastlog
     else
@@ -51,7 +52,7 @@ display_users(kafayat-adeyemi) {
 }
 
 # Function to display activities within a specified time range
-display_activities("2024-07-22 2024-07-24") {
+display_activities() {
     journalctl --since="$1" --until="$2"
 }
 

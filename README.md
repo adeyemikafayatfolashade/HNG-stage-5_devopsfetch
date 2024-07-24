@@ -5,41 +5,38 @@ Devopsfetch is a tool for server information retrieval and monitoring. It collec
 ## Installation and Configuration
 
 1. Clone the repository:
-   git clone https://github.com/adeyemikafayatfolashade/HNG-stage-5_devopsfetch.git
-   cd HNG-stage-5_devopsfetch
+    git clone https://github.com/adeyemikafayatfolashade/HNG-stage-5_devopsfetch.git
+    cd HNG-stage-5_devopsfetch
 2. Run the installation script:
-   sudo ./install_devopsfetch.sh
+    sudo /.install_devopsfetch.sh
 
 ## Usage
-  
- 1. Display Active Ports and Services and provide detailed information about a soecific port:
+
+1. Display Active Ports and Services and Provide Detailed Information about a Specific Port:
     devopsfetch -p          
     devopsfetch -p 80      
-
- 2. List Docker Images and Containers and provide detailed information about a specific container:
+2. List Docker Images and Containers and Provide Detailed Information about a Specific Container:
     devopsfetch -d          
     devopsfetch -d alpine 
 
- 3. Display Nginx Domains and Ports and provide detailed configuration information for a specific domain:
+3. Display Nginx Domains and Ports and Provide Detailed Configuration Information for a Specific Domain:
     devopsfetch -n          
-    devopsfetch -n twinmom.com
+    devopsfetch -n https://twinmom.com
 
- 4. List Users and Last Login Times and provide detailed information about a specific user:
+4. List Users and Last Login Times and Provide Detailed Information about a Specific User:
     devopsfetch -u          
     devopsfetch -u kafayat-adeyemi
 
- 5. Display Activities Within a Specified Time Range:
+5. Display Activities Within a Specified Time Range:
     devopsfetch -t "2024-07-22" "2024-07-24"  
 
  ## Help
  
-    To display usage instructions:
+- To display usage instructions:
     devopsfetch -h   
 
 ## Logging Mechanism
 
-    The activities is logged to /var/log/devopsfetch.log.
-    Log rotation is configured to keep logs for 7 days and compress older logs.
-    The following command can be used to retrieve logs: 
-    sudo cat /var/log/devopsfetch.log
-    
+- The activities is logged to /var/log/devopsfetch.log and log rotation is configured to keep logs for 7 days and compress older logs.
+- The following command can be used to retrieve logs: 
+    sudo cat /var/log/devopsfetch.log    

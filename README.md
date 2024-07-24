@@ -29,7 +29,7 @@ Devopsfetch is a tool for server information retrieval and monitoring. It collec
     devopsfetch -p 80      
 2. List Docker Images and Containers and Provide Detailed Information about a Specific Container:
     devopsfetch -d          
-    devopsfetch -d my-alpine-app 
+    devopsfetch -d alpine
 
 3. Display Nginx Domains and Ports and Provide Detailed Configuration Information for a Specific Domain:
     devopsfetch -n          

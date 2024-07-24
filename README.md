@@ -33,7 +33,7 @@ Devopsfetch is a tool for server information retrieval and monitoring. It collec
 
 3. Display Nginx Domains and Ports and Provide Detailed Configuration Information for a Specific Domain:
     devopsfetch -n          
-    devopsfetch -n https://twinmom.com
+    devopsfetch -n https://proxy.twinmom.com
 
 4. List Users and Last Login Times and Provide Detailed Information about a Specific User:
     devopsfetch -u          
